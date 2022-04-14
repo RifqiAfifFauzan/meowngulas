@@ -34,8 +34,12 @@
 
 	<!-- Atlantis JS -->
 	<script src="{{ asset('back/js/atlantis.min.js')}}"></script>
-
-	<!-- Atlantis DEMO methods, don't include it in your project!
+    <!--CKEDITOR5-->
+    <script src="https://cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script>
+	<script>
+        CKEDITOR.replace( 'editor1' );
+    </script>
+    <!-- Atlantis DEMO methods, don't include it in your project!
 	<script src="{{ asset('back/js/setting-demo.js')}}"></script>
 	<script src="{{ asset('back/js/demo.js')}}"></script>
 	<script>
@@ -130,5 +134,5 @@
 			lineWidth: '2',
 			lineColor: '#ffa534',
 			fillColor: 'rgba(255, 165, 52, .14)'
--->
-	</script>
+
+	</script>-->

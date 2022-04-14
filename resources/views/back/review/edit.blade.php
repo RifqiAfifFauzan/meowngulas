@@ -29,7 +29,7 @@
                         </div>
                         <div class="form-group">
                             <label for="body">Isi</label>
-                            <textarea name="body" class="form-control">{{ $review->body }}</textarea>
+                            <textarea name="body" class="form-control" id="editor1">{{ $review->body }}</textarea>
                         </div>
                         <div class="form-group">
                             <label for="gambar">Gambar review</label>

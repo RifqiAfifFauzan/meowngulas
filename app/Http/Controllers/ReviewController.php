@@ -141,7 +141,7 @@ class reviewController extends Controller
 
         Storage::delete($review->gambar_review);
         $review->delete();
-        Alert::success('Berhasil', 'Data Tersimpan');
+        Alert::success('Berhasil', 'Data Tehapus');
         return redirect()->route('review.index');
     }
 }

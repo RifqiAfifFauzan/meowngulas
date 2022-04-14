@@ -28,7 +28,7 @@
                         </div>
                         <div class="form-group">
                             <label for="body">Isi</label>
-                            <textarea name="body" class="form-control" id="text"></textarea>
+                            <textarea name="body" class="form-control" id="editor1"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="genre">Genre</label>
