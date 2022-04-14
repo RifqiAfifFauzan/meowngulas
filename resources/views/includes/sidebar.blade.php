@@ -66,7 +66,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('review.index') }}">
-                        <i class="fas fa-desktop"></i>
+                        <i class="fas fa-glasses"></i>
                         <p>Review</p>
                     </a>
                 </li>
@@ -78,19 +78,9 @@
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('genre.index') }}">
-                        <i class="fas fa-desktop"></i>
+                        <i class="fas fa-camera"></i>
                         <p>Genre</p>
                     </a>
-                    <a href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                       <i class="fas fa-undo"></i>
-                                       {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
             </li>
 
             </ul>
