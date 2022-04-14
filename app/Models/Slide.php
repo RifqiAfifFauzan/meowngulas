@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+
 class Slide extends Model
 {
     use HasFactory;
@@ -12,7 +13,7 @@ class Slide extends Model
     protected $table = 'slide';
 
     protected $fillable = [
-        'judul', 'link', 'gambar_slide', 'status'
+        'judul_slide', 'link', 'gambar_slide', 'status'
     ];
 
     protected $hidden = [];

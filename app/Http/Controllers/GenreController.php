@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Genre;
 use Illuminate\Support\Str;
+use RealRashid\SweetAlert\Facades\Alert;
+
 
 class GenreController extends Controller
 {
@@ -46,7 +48,8 @@ class GenreController extends Controller
             'slug'=> Str::slug($request ->nama_genre)
         ]);
 
-        return redirect()->route('genre.index')->with(['success'=>'Data Tersimpan']);
+        Alert::success('Berhasil', 'Data Tersimpan');
+        return redirect()->route('genre.index');
     }
 
     /**
@@ -88,7 +91,8 @@ class GenreController extends Controller
         $genre = Genre::findOrFail($id);
         $genre->update($data);
 
-        return redirect()->route('genre.index')->with(['update'=>'Data Berhasil Diupdate']);
+        Alert::info('Terupdate', 'Data Berhasil Diupdate');
+        return redirect()->route('genre.index');
     }
 
     /**
@@ -103,6 +107,7 @@ class GenreController extends Controller
 
         $genre->delete();
 
-        return redirect()->route('genre.index')->with(['success'=>'Data Berhasil Dihapus']);
+        Alert::success('Berhasil', 'Data Terhapus');
+        return redirect()->route('genre.index');
     }
 }

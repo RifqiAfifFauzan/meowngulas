@@ -15,9 +15,9 @@
 			<div class="card full-height">
 				<div class="card-header">
 					<div class="card-head-row">
-						<div class="card-title">review</div>
+						<div class="card-title">Review</div>
                         <a href="{{ route('review.create') }}" class="btn btn-primary btn-sm ml-auto">
-                            <i class="fas fa-plus"></i> Tambah review
+                            <i class="fas fa-plus"></i> Tambah Review
                         </a>
 					</div>
 				</div>

@@ -7,6 +7,7 @@ use Illuminate\Support\Str;
 use App\Models\Review;
 use App\Models\Genre;
 use Illuminate\Support\Facades\Auth;
+use RealRashid\SweetAlert\Facades\Alert;
 use Storage;
 
 class reviewController extends Controller
@@ -52,8 +53,8 @@ class reviewController extends Controller
         $data['gambar_review']=$request->file('gambar_review')->store('review');
 
         Review::create($data);
-
-        return redirect()->route('review.index')->with(['success'=> 'Data Tersimpan']);
+        Alert::success('Berhasil', 'Data Tersimpan');
+        return redirect()->route('review.index');
 
     }
 
@@ -108,8 +109,8 @@ class reviewController extends Controller
                     'is_active' => $request->is_active,
                     'user_id' => Auth::id(),
             ]);
-
-            return redirect()->route('review.index')->with(['success' => 'Data Berhasil Diupdate']);
+            Alert::info('Terupdate', 'Data Berhasil Diupdate');
+            return redirect()->route('review.index');
 
         } else {
             $review = Review::find($id);
@@ -123,7 +124,8 @@ class reviewController extends Controller
                 'user_id' => Auth::id(),
                 'gambar_review' => $request->file('gambar_review')->store('review'),
         ]);
-        return redirect()->route('review.index')->with(['success' => 'Data Berhasil Diupdate']);
+        Alert::info('Terupdate', 'Data Berhasil Diupdate');
+        return redirect()->route('review.index');
         }
     }
 
@@ -139,7 +141,7 @@ class reviewController extends Controller
 
         Storage::delete($review->gambar_review);
         $review->delete();
-
-        return redirect()->route('review.index')->with(['success'=>'Data Berhasil Dihapus']);
+        Alert::success('Berhasil', 'Data Tersimpan');
+        return redirect()->route('review.index');
     }
 }

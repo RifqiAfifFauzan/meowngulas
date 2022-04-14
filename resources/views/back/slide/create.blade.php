@@ -20,29 +20,30 @@
 					</div>
 				</div>
 				<div class="card-body">
-                    <form method="post" action="{{ route('slide.store') }}">
+                    <form method="post" action="{{ route('slide.store') }}" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
-                            <label for="judul">Judul Slide</label>
-                            <input type="text" name="judul" class="form-control" id="text" placeholder="Masukkan Judul">
+                            <label for="judul_slide">Judul Slide</label>
+                            <input type="text" name="judul_slide" class="form-control" id="text" placeholder="Masukkan Judul">
                         </div>
                         <div class="form-group">
                             <label for="link">Link</label>
                             <input type="text" name="link" class="form-control" id="text" placeholder="Masukkan Link">
                         </div>
                         <div class="form-group">
-                            <label for="gambar">Gambar slide</label>
+                            <label for="gambar_slide">Gambar slide</label>
                             <input type="file" name="gambar_slide" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="status">Status</label>
-                            <select name="is_active" class="form-control">
+                            <select name="status" class="form-control">
                                 <option value="1">Publish</option>
                                 <option value="0">Draft</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <button class="btn btn-primary btn-sm" type="submit">Save</button>
+                            <button class="btn btn-danger btn-sm" type="reset">Reset</button>
                         </div>
                     </form>
 				</div>

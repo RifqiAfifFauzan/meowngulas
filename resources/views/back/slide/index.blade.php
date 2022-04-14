@@ -46,18 +46,16 @@
                                     <td>{{ $row->judul_slide }}</td>
                                     <td>{{ $row->link }}</td>
                                     <td>
-                                        <img src="{{ asset('uploads/'.$row->gambar_news)}}" width="100">
+                                        <img src="{{ asset('uploads/'.$row->gambar_slide)}}" width="100">
                                     </td>
                                     <td>
-                                        @if ($row->is_active == '1')
+                                        @if ($row->status == '1')
                                         Active
                                         @else
                                         Draft
                                         @endif
                                     </td>
                                     <td>
-                                        <a href="{{ route('slide.edit', $row->id) }}" class="btn btn-warning btn-sm"><i class="fas fa-pen"></i></a>
-
                                         <form action="{{ route('slide.destroy', $row->id) }}" method="post" class='d-inline'>
                                             @csrf
                                             @method('delete')

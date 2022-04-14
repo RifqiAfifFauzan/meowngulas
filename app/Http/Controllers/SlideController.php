@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 use App\Models\Slide;
 use Storage;
 
@@ -44,18 +45,22 @@ class SlideController extends Controller
 
         if (!empty($request->file('gambar_slide'))){
             $data = $request->all();
-            $data['gambar_slide']=$request->file('gambar_slide')->store('slide');
+            $data['gambar_slide'] = $request->file('gambar_slide')->store('slide');
 
             Slide::create($data);
 
-            return redirect()->route('slide.index')->with('success', 'Data Berhasil Disimpan');
+            Alert::success('Berhasil', 'Data Tersimpan');
+            return redirect()->route('slide.index');
         } else {
             $data = $request->all();
             Slide::create($data);
 
-            return redirect()->route('slide.index')->with('success', 'Data Berhasil Disimpan');
+            Alert::success('Berhasil', 'Data Tersimpan');
+
+            return redirect()->route('slide.index');
         }
     }
+
 
     /**
      * Display the specified resource.
@@ -104,6 +109,7 @@ class SlideController extends Controller
         Storage::delete($slide->gambar_slide);
         $slide->delete();
 
-        return redirect()->route('slide.index')->with(['success'=>'Data Berhasil Dihapus']);
+        Alert::success('Berhasil', 'Data Terhapus');
+        return redirect()->route('slide.index');
     }
 }
