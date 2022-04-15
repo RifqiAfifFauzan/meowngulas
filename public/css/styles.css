@@ -1,0 +1,15 @@
+body {
+    background: rgb(24, 24, 24);
+}
+body h1{
+    color:snow;
+}
+.navbar {
+    background: #760013;
+}
+
+.navbar img{
+    width: 150px;
+}
+
+

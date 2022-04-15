@@ -22,6 +22,7 @@
 	<!-- CSS Files -->
 	<link rel="stylesheet" href="{{ asset('back/css/bootstrap.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('back/css/atlantis.min.css') }}">
+    <link rel="stylesheet" href="css/dashboard.css">
 
 </head>
 <body>
