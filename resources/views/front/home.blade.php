@@ -1,6 +1,6 @@
 
 @extends('front.layouts.frontend')
-
+@include('front.includes.slide')
 @section('judul')
 <h1>Latest Review</h1>
 @endsection
@@ -11,7 +11,11 @@
         <div class="card">
             <img class="card-img-top" src="{{ asset('uploads/'.$row->gambar_review)}}" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">{{ $row->judul }}</h5>
+              <h5 class="card-title">
+                  <a href=" {{ route('detail-review', $row->slug) }} ">
+                    {{ $row->judul }}
+                  </a>
+              </h5>
               {{-- <p class="card-text">{!! $row->body !!}</p> --}}
             </div>
             {{-- <ul class="list-group list-group-flush">

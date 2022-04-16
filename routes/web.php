@@ -23,6 +23,8 @@ use App\Http\Controllers\SlideController;
 //     return view('welcome');
 // });
 Route::get('/', [FrontendController::class, 'index']);
+Route::get('/detail-review/{slug}', [FrontendController::class, 'detail'])->name('detail-review');
+
 
 Auth::routes();
 

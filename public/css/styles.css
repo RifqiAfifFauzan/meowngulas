@@ -1,11 +1,12 @@
 body {
-    background: rgb(24, 24, 24);
+    background: #f4f8ffdb;
+    font-family: 'Oswald';
 }
 body h1{
-    color:snow;
+    color:#010101;
 }
 .navbar {
-    background: #760013;
+    background: #f4f8ff;
 }
 
 .navbar img{
@@ -13,3 +14,14 @@ body h1{
 }
 
 
+.navbar li a {
+    color: #050c43;
+}
+
+.fa-search {
+    color: #050c43;
+}
+
+.card-body h5 a{
+    text-decoration:none;
+}

@@ -20,4 +20,15 @@ class FrontendController extends Controller
             'slide' => $slide
         ]);
     }
+
+    public function detail($slug){
+
+        $genre = Genre::all();
+        $review = Review::where('slug', $slug)->first();
+
+        return view('front.review.detail-review',[
+            'review' => $review,
+            'genre' => $genre
+        ]);
+    }
 }

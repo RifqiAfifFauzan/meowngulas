@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="{{ asset('back/css/fonts.min.css') }}">
     <link rel="icon" href="img/meowngulas-icon.png" type="image" sizes="16x16">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
 
     <title>Meowngulas</title>
   </head>
   <body>
     @include('front.includes.header')
 
-    @include('front.includes.slide')
+
 
     <div class="container">
         <div class="row">
