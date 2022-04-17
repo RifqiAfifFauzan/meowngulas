@@ -25,3 +25,7 @@ body h1{
 .card-body h5 a{
     text-decoration:none;
 }
+
+.footer{
+    background: red;
+}
