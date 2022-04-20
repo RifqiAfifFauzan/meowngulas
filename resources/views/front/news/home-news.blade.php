@@ -26,7 +26,6 @@
                 </ul> --}}
                 <div class="card-body">
                   <a href="#" class="card-link">{{ $row->user->name }}</a>
-                  <a href="#" class="card-link">{{ $row->genre->nama_genre }}</a>
                 </div>
             </div>
         </div>

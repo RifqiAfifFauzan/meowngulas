@@ -85,7 +85,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('news.index') }}">
-                        <i class="fas fa-news"></i>
+                        <i class="fas fa-newspaper"></i>
                         <p>News</p>
                     </a>
                 </li>

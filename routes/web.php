@@ -24,9 +24,10 @@ use App\Http\Controllers\SlideController;
 //     return view('welcome');
 // });
 Route::get('/', [FrontendController::class, 'index']);
-Route::get('/detail-review/{slug}', [FrontendController::class, 'detail'])->name('detail-review');
-Route::get('/detail-news/{slug}', [FrontendController::class, 'detail'])->name('detail-news');
+Route::get('/detail-review/{slug}', [FrontendController::class, 'detailreview'])->name('detail-review');
+Route::get('/detail-news/{slug}', [FrontendController::class, 'detailnews'])->name('detail-news');
 Route::get('/home-review', [FrontendController::class, 'listreview'])->name('home-review');
+Route::get('/home-news', [FrontendController::class, 'listnews'])->name('home-news');
 
 
 Auth::routes();

@@ -24,7 +24,7 @@ class FrontendController extends Controller
         ]);
     }
 
-    public function detail($slug){
+    public function detailreview($slug){
 
         $genre = Genre::all();
         $review = Review::where('slug', $slug)->first();
@@ -45,13 +45,27 @@ class FrontendController extends Controller
             'genre' => $genre
         ]);
     }
+
+    public function detailnews($slug){
+
+        $genre = Genre::all();
+        $news = news::where('slug', $slug)->first();
+
+        return view('front.news.detail-news',[
+            'news' => $news,
+            'genre'=> $genre,
+        ]);
+    }
+
+
     public function listnews(){
 
-
+        $genre = Genre::all();
         $news = News::all();
 
         return view('front.news.home-news',[
             'news' => $news,
+            'genre'=> $genre,
         ]);
     }
 }

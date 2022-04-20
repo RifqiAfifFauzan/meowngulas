@@ -61,6 +61,9 @@
           data-mdb-ripple-color="dark"
           ><i class="fab fa-github"></i
         ></a>
+        <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
       </section>
       <!-- Section: Social media -->
     </div>

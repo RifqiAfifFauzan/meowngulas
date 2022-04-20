@@ -9,7 +9,6 @@
             </div>
             <div class="detail-content mt-2 p-4">
                 <div class="detail-badge">
-                    <a href="" class="badge badge-warning">{{ $news->genre->nama_genre }}</a>
                     <a href="" class="badge badge-primary">{{ $news->user->name }}</a>
                 </div>
                 <h2>{{ $news->judul }}</h2>
@@ -20,7 +19,6 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4"></div>
     </div>
 </div>
 @endsection

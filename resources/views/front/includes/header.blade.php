@@ -1,3 +1,4 @@
+
 <nav class="navbar navbar-expand-lg">
 
     <div class="container">
@@ -21,11 +22,12 @@
             @endforeach
           </div>
         </li>
-        <li class="nav-item active">
-            <a class="nav-link" href="/">News<span class="sr-only">(current)</span></a>
-        </li>
+
         <li class="nav-item active">
             <a class="nav-link" href="{{ route('home-review') }}">Reviews<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="{{ route('home-news') }}">News<span class="sr-only">(current)</span></a>
         </li>
       </ul>
 
