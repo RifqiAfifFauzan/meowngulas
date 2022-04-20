@@ -15,7 +15,7 @@
 			<div class="card full-height">
 				<div class="card-header">
 					<div class="card-head-row">
-						<div class="card-title">Review</div>
+						<div class="card-title"><h1>Review</h1></div>
                         <a href="{{ route('review.create') }}" class="btn btn-primary btn-sm ml-auto">
                             <i class="fas fa-plus"></i> Tambah Review
                         </a>
@@ -37,6 +37,7 @@
                                     <th>Genre</th>
                                     <th>Author</th>
                                     <td>Gambar</td>
+                                    <td>Rating</td>
                                     <th>Status</th>
                                     <th>Action</th>
                                 </tr>
@@ -52,6 +53,7 @@
                                     <td>
                                         <img src="{{ asset('uploads/'.$row->gambar_review)}}" width="100">
                                     </td>
+                                    <td>{{ $row->rating}}</td>
                                     <td>
                                         @if ($row->is_active == '1')
                                         Published
@@ -74,7 +76,7 @@
                                 </tr>
                                 @empty
                                 <tr>
-                                    <td colspan="8" class="text-center">Data Masih Kosong</td>
+                                    <td colspan="9" class="text-center">Data Masih Kosong</td>
                                 </tr>
                                 @endforelse
 

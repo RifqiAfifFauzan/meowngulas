@@ -16,7 +16,7 @@
 				<div class="card-header">
 					<div class="card-head-row">
 						<div class="card-title">Form review</div>
-                        <a href="{{ route('genre.index') }}" class="btn btn-warning btn-sm ml-auto">Back</a>
+                        <a href="{{ route('review.index') }}" class="btn btn-warning btn-sm ml-auto">Back</a>
 					</div>
 				</div>
 				<div class="card-body">
@@ -42,6 +42,16 @@
                         <div class="form-group">
                             <label for="gambar">Gambar</label>
                             <input type="file" name="gambar_review" class="form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label for="rating">Rating</label>
+                            <select name="rating" class="form-control" >
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label for="status">Status</label>

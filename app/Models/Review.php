@@ -13,7 +13,7 @@ class Review extends Model
     //Membatasi field apa saja yang bisa diisi
     protected $fillable=[
         'judul','slug','genre_id','user_id','gambar_review',
-        'is_active','views', 'body'
+        'is_active','views', 'body', 'rating'
     ];
 
     protected $hidden=[];

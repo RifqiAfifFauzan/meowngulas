@@ -3,6 +3,7 @@
         <div class="sidebar-content">
             <div class="user">
                 <div class="avatar-sm float-left mr-2">
+
                     <img src="{{ asset('back/img/profile.jpg')}}" alt="..." class="avatar-img rounded-circle">
                 </div>
                 <div class="info">
@@ -32,12 +33,24 @@
                                     <span class="link-collapse">Settings</span>
                                 </a>
                             </li>
+                            <li>
+                                <a class="link" href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                              document.getElementById('logout-form').submit();">
+                                {{-- <i class="fas fa-undo"></i> --}}
+                                {{ __('Logout') }}
+                             </a>
+
+                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                 @csrf
+                             </form>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <ul class="nav nav-primary">
-                <li class="nav-item active">
+                {{-- <li class="nav-item active">
                     <a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
                         <i class="fas fa-home"></i>
                         <p>Dashboard</p>
@@ -57,7 +70,7 @@
                             </li>
                         </ul>
                     </div>
-                </li>
+                </li> --}}
                 <li class="nav-section">
                     <span class="sidebar-mini-icon">
                         <i class="fa fa-ellipsis-h"></i>
@@ -71,6 +84,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="{{ route('news.index') }}">
+                        <i class="fas fa-news"></i>
+                        <p>News</p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="{{ route('slide.index') }}">
                         <i class="fas fa-desktop"></i>
                         <p>Slide Banner</p>
@@ -81,8 +100,13 @@
                         <i class="fas fa-camera"></i>
                         <p>Genre</p>
                     </a>
-            </li>
-
+                </li>
+                <li class="nav-item">
+                    <a href="/">
+                        <i class="fas fa-home"></i>
+                        <p>Back to Home</p>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

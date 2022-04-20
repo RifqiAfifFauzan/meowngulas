@@ -18,14 +18,15 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="{{ asset('back/css/styles.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-dark shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <a class="navbar-brand w-2" href="/"><img src="img/meowngulas-navbar.png" alt="logo"/></a>
+                    {{-- <a class="navbar-brand w-2" href="/"><img src="img/meowngulas-navbar.png" alt="logo"/></a> --}}
+                    <a class="navbar-brand" href="/"><img src="{{ asset('back/img/meowngulas-navbar.png')}}" alt="logo"/></a>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

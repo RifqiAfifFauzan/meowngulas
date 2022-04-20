@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Genre;
 use App\Models\Review;
 use App\Models\Slide;
+use App\Models\News;
 
 class FrontendController extends Controller
 {
@@ -14,10 +15,12 @@ class FrontendController extends Controller
         $genre = Genre::all();
         $review = Review::all();
         $slide = Slide::all();
+        $news = News::all();
     return view('front.home', [
             'genre' => $genre,
             'review' => $review,
-            'slide' => $slide
+            'slide' => $slide,
+            'news' => $news,
         ]);
     }
 
@@ -29,6 +32,26 @@ class FrontendController extends Controller
         return view('front.review.detail-review',[
             'review' => $review,
             'genre' => $genre
+        ]);
+    }
+
+    public function listreview(){
+
+        $genre = Genre::all();
+        $review = Review::all();
+
+        return view('front.review.home-review',[
+            'review' => $review,
+            'genre' => $genre
+        ]);
+    }
+    public function listnews(){
+
+
+        $news = News::all();
+
+        return view('front.news.home-news',[
+            'news' => $news,
         ]);
     }
 }

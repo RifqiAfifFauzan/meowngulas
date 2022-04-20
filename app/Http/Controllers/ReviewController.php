@@ -51,6 +51,7 @@ class reviewController extends Controller
         $data['user_id'] = Auth::id();
         $data['views'] = 0;
         $data['gambar_review']=$request->file('gambar_review')->store('review');
+        $data['rating'];
 
         Review::create($data);
         Alert::success('Berhasil', 'Data Tersimpan');
@@ -108,6 +109,7 @@ class reviewController extends Controller
                     'genre_id' => $request->genre_id,
                     'is_active' => $request->is_active,
                     'user_id' => Auth::id(),
+                    'rating' => $request->rating,
             ]);
             Alert::info('Terupdate', 'Data Berhasil Diupdate');
             return redirect()->route('review.index');
@@ -123,6 +125,7 @@ class reviewController extends Controller
                 'is_active' => $request->is_active,
                 'user_id' => Auth::id(),
                 'gambar_review' => $request->file('gambar_review')->store('review'),
+                'rating' => $request->rating,
         ]);
         Alert::info('Terupdate', 'Data Berhasil Diupdate');
         return redirect()->route('review.index');

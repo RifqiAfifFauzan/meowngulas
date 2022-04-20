@@ -17,7 +17,7 @@
 
   </head>
 
-  <body>
+  <body class="bg-image">
     @include('front.includes.header')
     <div class="container">
         <div class="row">

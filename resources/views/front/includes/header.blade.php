@@ -1,4 +1,5 @@
 <nav class="navbar navbar-expand-lg">
+
     <div class="container">
         <a class="navbar-brand" href="/"><img src="{{ asset('back/img/meowngulas-navbar.png')}}" alt="logo"/></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +25,7 @@
             <a class="nav-link" href="/">News<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link" href="/">Reviews<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="{{ route('home-review') }}">Reviews<span class="sr-only">(current)</span></a>
         </li>
       </ul>
 

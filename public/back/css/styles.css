@@ -26,6 +26,8 @@ body h1{
     text-decoration:none;
 }
 
-.footer{
-    background: red;
-}
+
+.checked {
+    color: orange;
+  }
+
