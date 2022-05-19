@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 mb-3 bg-white rounded">
 
     <div class="container">
         <a class="navbar-brand" href="/"><img src="{{ asset('back/img/meowngulas-navbar.png')}}" alt="logo"/></a>
