@@ -110,4 +110,5 @@ class GenreController extends Controller
         Alert::success('Berhasil', 'Data Terhapus');
         return redirect()->route('genre.index');
     }
+
 }

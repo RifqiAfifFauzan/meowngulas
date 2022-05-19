@@ -13,9 +13,9 @@ class FrontendController extends Controller
     public function index()
     {
         $genre = Genre::all();
-        $review = Review::all();
-        $slide = Slide::all();
-        $news = News::all();
+        $review = Review::orderBy('created_at', 'DESC')->get();
+        $slide = Slide::orderBy('created_at', 'DESC')->get();
+        $news = News::orderBy('created_at', 'DESC')->get();
     return view('front.home', [
             'genre' => $genre,
             'review' => $review,
@@ -38,7 +38,7 @@ class FrontendController extends Controller
     public function listreview(){
 
         $genre = Genre::all();
-        $review = Review::all();
+        $review = Review::paginate(6);
 
         return view('front.review.home-review',[
             'review' => $review,
@@ -60,12 +60,64 @@ class FrontendController extends Controller
 
     public function listnews(){
 
-        $genre = Genre::all();
-        $news = News::all();
+        $news = News::paginate(6);
+
 
         return view('front.news.home-news',[
             'news' => $news,
+        ]);
+    }
+
+    public function listgenre(){
+
+        $genre = Genre::all();
+
+        return view('front.genre.home-genre',[
             'genre'=> $genre,
+        ]);
+    }
+
+    public function showReviewByGenre($slug)
+    {
+        $review = Review::whereHas('genre',function($query) use($slug) {
+            return $query->where('slug', $slug);
+        })->get();
+
+        $genre = Genre::where('slug',$slug)->first();
+
+        return view('front.genre.review-genre',[
+            'review' => $review,
+            'genre' => $genre,
+        ]);
+    }
+    // public function listgenre($nama_genre){
+
+    //     $genre = Genre::all();
+    //     $review = Review::all();
+
+    //     return view('front.genre.genres',[
+    //         'review' => $review,
+    //         'genre'=> $genre,
+    //     ]);
+    // }
+    // public function listgenre(Genre $genre){
+    //     return view('front.genre.genres')->with('genre', $genre)->with('review', $genre->review()->simplePagination(3));
+    // }
+
+    public function search(Request $request)
+    {
+        if($request->has('search')){
+            $review = Review::where('judul', 'like', '%' .$request->search. '%')->get();
+            $news = News::where('judul', 'like', '%' .$request->search. '%')->get();
+        }
+        else{
+            $review = Review::all();
+            $news = News::all();
+        }
+
+        return view ('front.cari.search', [
+            'review' => $review,
+            'news' => $news
         ]);
     }
 }

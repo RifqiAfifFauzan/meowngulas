@@ -28,7 +28,9 @@ Route::get('/detail-review/{slug}', [FrontendController::class, 'detailreview'])
 Route::get('/detail-news/{slug}', [FrontendController::class, 'detailnews'])->name('detail-news');
 Route::get('/home-review', [FrontendController::class, 'listreview'])->name('home-review');
 Route::get('/home-news', [FrontendController::class, 'listnews'])->name('home-news');
-
+Route::get('/home-genre', [FrontendController::class, 'listgenre'])->name('home-genre');
+Route::get('/home-genre/{slug}', [FrontendController::class, 'showReviewByGenre'])->name('review-genre');
+Route::get('/search', [FrontendController::class, 'search'])->name('search');
 
 Auth::routes();
 

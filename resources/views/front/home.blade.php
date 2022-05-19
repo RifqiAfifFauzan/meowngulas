@@ -65,7 +65,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><a href="{{ route('detail-news', $row->slug) }}">{{ $row->judul }}</a></h5>
                     <p class="card-text">{!! Str::limit($row->body, 200) !!}</p>
-                    <p class="card-text"><small class="text-muted">{{ $row->user->name }}</small></p>
+                    <p class="card-text"><small class="text-muted">{{ $row->user->name }}&nbsp&nbsp{{ $row->created_at }}</small></p>
                 </div>
             </div>
 
