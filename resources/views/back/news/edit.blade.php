@@ -37,13 +37,13 @@
                             <label for="gambar">Gambar Saat Ini</label><br>
                             <img src="{{ asset('uploads/'.$news->gambar_news)}}" width="100">
                         </div>
-                        <div class="form-group">
+                        {{-- <div class="form-group">
                             <label for="status">Status</label>
                             <select name="is_active" class="form-control">
                                 <option value="1" {{ $news->is_active == '1' ? 'selected' : ''}}>Publish</option>
                                 <option value="0" {{ $news->is_active == '0' ? 'selected' : ''}}>Draft</option>
                             </select>
-                        </div>
+                        </div> --}}
                         <div class="form-group">
                             <button class="btn btn-primary btn-sm" type="submit">Save</button>
                             <button class="btn btn-danger btn-sm" type="reset">Reset</button>

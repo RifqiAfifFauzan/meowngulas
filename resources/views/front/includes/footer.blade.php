@@ -1,6 +1,7 @@
-<footer class="text-center text-white" style="background-color: #f1f1f1;">
+<footer class="pt-5 pb-4 text-center text-white" style="background-color: #f1f1f1;">
     <!-- Grid container -->
     <div class="container pt-4">
+
       <!-- Section: Social media -->
       <section class="mb-4">
         <!-- Facebook -->

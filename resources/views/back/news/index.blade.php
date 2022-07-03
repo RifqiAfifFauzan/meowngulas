@@ -36,7 +36,7 @@
                                     <th>Slug</th>
                                     <th>Author</th>
                                     <td>Gambar</td>
-                                    <th>Status</th>
+                                    {{-- <th>Status</th> --}}
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -50,13 +50,13 @@
                                     <td>
                                         <img src="{{ asset('uploads/'.$row->gambar_news)}}" width="100">
                                     </td>
-                                    <td>
+                                    {{-- <td>
                                         @if ($row->is_active == '1')
                                         Published
                                         @else
                                         Draft
                                         @endif
-                                    </td>
+                                    </td> --}}
                                     <td>
                                         <a href="{{ route('news.edit', $row->id) }}" class="btn btn-warning btn-sm"><i class="fas fa-pen"></i></a>
 

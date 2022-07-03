@@ -17,9 +17,9 @@
 
   </head>
 
-  <body class="bg-image">
+<body class="bg-image ">
     @include('front.includes.header')
-    <div class="container">
+    <div class="container min-vw-100">
         <div class="row">
             @yield('content')
         </div>

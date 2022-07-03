@@ -38,7 +38,7 @@
                                     <th>Author</th>
                                     <td>Gambar</td>
                                     <td>Rating</td>
-                                    <th>Status</th>
+                                    {{-- <th>Status</th> --}}
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -54,13 +54,13 @@
                                         <img src="{{ asset('uploads/'.$row->gambar_review)}}" width="100">
                                     </td>
                                     <td>{{ $row->rating}}</td>
-                                    <td>
+                                    {{-- <td>
                                         @if ($row->is_active == '1')
                                         Published
                                         @else
                                         Draft
                                         @endif
-                                    </td>
+                                    </td> --}}
                                     <td>
                                         <a href="{{ route('review.edit', $row->id) }}" class="btn btn-warning btn-sm"><i class="fas fa-pen"></i></a>
 

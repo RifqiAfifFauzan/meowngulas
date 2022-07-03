@@ -35,7 +35,6 @@
                                     <th>Judul Slide</th>
                                     <th>Link</th>
                                     <th>Gambar</th>
-                                    <th>Status</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -47,13 +46,6 @@
                                     <td>{{ $row->link }}</td>
                                     <td>
                                         <img src="{{ asset('uploads/'.$row->gambar_slide)}}" width="100">
-                                    </td>
-                                    <td>
-                                        @if ($row->status == '1')
-                                        Active
-                                        @else
-                                        Draft
-                                        @endif
                                     </td>
                                     <td>
                                         <form action="{{ route('slide.destroy', $row->id) }}" method="post" class='d-inline'>

@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Genre;
+use App\Models\News;
+use App\Models\Review;
+use App\Models\Slide;
 
 class DashboardController extends Controller
 {
@@ -13,7 +17,16 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('back.dashboard');
+        $genre = Genre::count();
+        $news = News::count();
+        $review = Review::count();
+        $slide = Slide::count();
+        return view('back.dashboard', [
+            'genre' => $genre,
+            'news' => $news,
+            'review' => $review,
+            'slide' => $slide
+        ]);
     }
 
     /**
@@ -81,4 +94,6 @@ class DashboardController extends Controller
     {
         //
     }
+
+
 }

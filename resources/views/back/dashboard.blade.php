@@ -20,25 +20,6 @@
 	<div class="row">
 		<div class="col-sm-6 col-md-3">
 			<div class="card card-stats card-round">
-				<div class="card-body ">
-					<div class="row align-items-center">
-						<div class="col-icon">
-							<div class="icon-big text-center icon-primary bubble-shadow-small">
-								<i class="fas fa-users"></i>
-							</div>
-						</div>
-						<div class="col col-stats ml-3 ml-sm-0">
-							<div class="numbers">
-								<p class="card-category">User</p>
-								{{--<h4 class="card-title">isi</h4>--}}
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-6 col-md-3">
-			<div class="card card-stats card-round">
 				<div class="card-body">
 					<div class="row align-items-center">
 						<div class="col-icon">
@@ -49,7 +30,7 @@
 						<div class="col col-stats ml-3 ml-sm-0">
 							<div class="numbers">
 								<p class="card-category">News</p>
-								{{--<h4 class="card-title">70</h4>--}}
+								<h4 class="card-title">{{$news}}</h4>
 							</div>
 						</div>
 					</div>
@@ -68,7 +49,7 @@
 						<div class="col col-stats ml-3 ml-sm-0">
 							<div class="numbers">
 								<p class="card-category">Review</p>
-								{{--<h4 class="card-title">70</h4>--}}
+								<h4 class="card-title">{{$review}}</h4>
 							</div>
 						</div>
 					</div>
@@ -87,7 +68,26 @@
 						<div class="col col-stats ml-3 ml-sm-0">
 							<div class="numbers">
 								<p class="card-category">Genre</p>
-								{{--<h4 class="card-title">80</h4>--}}
+								<h4 class="card-title">{{$genre}}</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="col-sm-6 col-md-3">
+			<div class="card card-stats card-round">
+				<div class="card-body">
+					<div class="row align-items-center">
+						<div class="col-icon">
+							<div class="icon-big text-center icon-info bubble-shadow-small">
+								<i class="far fa-newspaper"></i>
+							</div>
+						</div>
+						<div class="col col-stats ml-3 ml-sm-0">
+							<div class="numbers">
+								<p class="card-category">Slide Banner</p>
+								<h4 class="card-title">{{$slide}}</h4>
 							</div>
 						</div>
 					</div>
