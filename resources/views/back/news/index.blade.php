@@ -15,7 +15,7 @@
 			<div class="card full-height">
 				<div class="card-header">
 					<div class="card-head-row">
-						<div class="card-title"><h1>News</h1></div>
+						<div class="card-title"><h1 class="text-dark">News</h1></div>
                         <a href="{{ route('news.create') }}" class="btn btn-primary btn-sm ml-auto">
                             <i class="fas fa-plus"></i> Tambah News
                         </a>

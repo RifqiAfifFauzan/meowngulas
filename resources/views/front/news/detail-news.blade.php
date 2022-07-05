@@ -1,7 +1,7 @@
 @extends('front.layouts.frontend')
 
 @section('content')
-<div class="container">
+<div class="container text-light">
     <div class="row">
         <div class="col-lg-8 mt-4">
             <div class="div">

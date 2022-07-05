@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <h1 class="mt-3 text-center">Search</h1>
+    <h1 class="mt-3 text-center text-light">Search</h1>
     {{-- <p class="text-center">{{Mari lihat ulasan sebelum kamu menonton!}}</p> --}}
 </div>
 <div class="container">

@@ -1,6 +1,8 @@
 <div class="main-header">
     <!-- Logo Header -->
+
     <div class="logo-header" data-background-color="blue">
+        <img class="logo" src="{{ asset('back/img/logo.png') }}" alt="meowngulas" />
         {{-- <a class="navbar-brand"href="/"><img src="{{ asset('back/img/meowngulas-navbar.png')}}" alt="logo"/></a> --}}
         {{-- <a href="index.html" class="logo">
             <img src="{{ asset ('back/img/navbar')}}" alt="navbar brand" class="navbar-brand">

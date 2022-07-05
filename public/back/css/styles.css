@@ -1,16 +1,21 @@
 body {
-    background: #f4f8ffdb;
+    background: #1f1f1f;
     font-family: 'Oswald';
+    margin: 0;
+    min-height: 100%;
 }
 
+body p{
+    text-align: justify;
+}
 body h1,a{
-    color:#010101;
+    color:#ffffff;
 }
 a:active{
     color: #050c43;
 }
 .navbar {
-    background: #f4f8ff;
+    background: #121212;
 }
 
 .navbar img{
@@ -49,4 +54,36 @@ a:active{
 
 .fa-bars {
     color: orange;
+}
+
+footer {
+    text-align: center;
+    margin-top: 400px;
+    background: #121212;
+}
+
+.card {
+    background: #121212;
+}
+.card a{
+    color: snow;
+}
+
+.container {
+    color: #121212;
+}
+
+.list-group {
+    background: #121212;
+}
+
+img {
+    text-align: center;
+}
+
+.logo {
+    max-width: 200px;
+    max-height: 30px;
+    position: relative; /* <--- set to display */
+    right: 25px;
 }

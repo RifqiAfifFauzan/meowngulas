@@ -2,8 +2,8 @@
 
 @section('content')
 <div class="container">
-    <h1 class="mt-3 text-center">REVIEWS</h1>
-    <p class="text-center">Mari lihat ulasan sebelum kamu menonton!</p>
+    <h1 class="mt-3 text-center text-light">REVIEWS</h1>
+    <p class="text-center text-light">Mari lihat ulasan sebelum kamu menonton!</p>
 </div>
 <div class="container">
     <div class="row">

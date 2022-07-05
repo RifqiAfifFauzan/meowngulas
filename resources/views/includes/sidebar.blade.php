@@ -1,9 +1,10 @@
 <div class="sidebar sidebar-style-2">
+
     <div class="sidebar-wrapper scrollbar scrollbar-inner">
         <div class="sidebar-content">
+
             <div class="user">
                 <div class="avatar-sm float-left mr-2">
-
                     <img src="{{ asset('back/img/profile.jpg')}}" alt="..." class="avatar-img rounded-circle">
                 </div>
                 <div class="info">
@@ -84,6 +85,12 @@
                         <p>Dashboard</p>
                     </a>
                 </li> --}}
+                <li class="nav-item">
+                    <a href="{{ route('dashboard') }}">
+                        <i class="fas fa-home"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
                 <li class="nav-item">
                     <a href="{{ route('review.index') }}">
                         <i class="fas fa-glasses"></i>

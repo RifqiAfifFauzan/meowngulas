@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <h1 class="mt-3 text-center">GENRES</h1>
+    <h1 class="mt-3 text-center text-light">GENRES</h1>
 </div>
 <div class="container">
     <div class="col mt-4">

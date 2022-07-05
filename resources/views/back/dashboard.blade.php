@@ -28,10 +28,13 @@
 							</div>
 						</div>
 						<div class="col col-stats ml-3 ml-sm-0">
-							<div class="numbers">
-								<p class="card-category">News</p>
-								<h4 class="card-title">{{$news}}</h4>
-							</div>
+							<a href="{{ route('news.index') }}">
+                                <div class="numbers">
+								    <p class="card-category">News</p>
+								    <h4 class="card-title">{{$news}}</h4>
+
+							    </div>
+                            </a>
 						</div>
 					</div>
 				</div>
@@ -47,10 +50,12 @@
 							</div>
 						</div>
 						<div class="col col-stats ml-3 ml-sm-0">
-							<div class="numbers">
-								<p class="card-category">Review</p>
-								<h4 class="card-title">{{$review}}</h4>
-							</div>
+							<a href="{{ route('review.index') }}">
+                                <div class="numbers">
+								    <p class="card-category">Review</p>
+								    <h4 class="card-title">{{$review}}</h4>
+							    </div>
+                            </a>
 						</div>
 					</div>
 				</div>
@@ -66,10 +71,12 @@
 							</div>
 						</div>
 						<div class="col col-stats ml-3 ml-sm-0">
-							<div class="numbers">
-								<p class="card-category">Genre</p>
-								<h4 class="card-title">{{$genre}}</h4>
-							</div>
+                            <a href="{{ route('genre.index') }}">
+                                <div class="numbers">
+                                    <p class="card-category">Genre</p>
+                                    <h4 class="card-title">{{$genre}}</h4>
+                                </div>
+                            </a>
 						</div>
 					</div>
 				</div>
@@ -85,16 +92,18 @@
 							</div>
 						</div>
 						<div class="col col-stats ml-3 ml-sm-0">
-							<div class="numbers">
-								<p class="card-category">Slide Banner</p>
-								<h4 class="card-title">{{$slide}}</h4>
-							</div>
+                            <a href="{{ route('slide.index') }}">
+                                <div class="numbers">
+                                    <p class="card-category">Slide Banner</p>
+                                    <h4 class="card-title">{{$slide}}</h4>
+                                </div>
+                            </a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		{{--<div class="col-sm-6 col-md-3">
+		{{-- <div class="col-sm-6 col-md-3">
 			<div class="card card-stats card-round">
 				<div class="card-body">
 					<div class="row align-items-center">
@@ -172,6 +181,6 @@
 				</div>
 			</div>
 		</div>
-	</div>--}}
+	</div> --}}
 </div>
 @endsection

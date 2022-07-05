@@ -15,7 +15,7 @@
 			<div class="card full-height">
 				<div class="card-header">
 					<div class="card-head-row">
-						<div class="card-title"><h1>Slide</h1></div>
+						<div class="card-title"><h1 class="text-dark">Slide</h1></div>
                         <a href="{{ route('slide.create') }}" class="btn btn-primary btn-sm ml-auto">
                             <i class="fas fa-plus"></i>Tambah Slide
                         </a>

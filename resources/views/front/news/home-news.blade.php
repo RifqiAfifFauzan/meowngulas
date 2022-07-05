@@ -2,8 +2,8 @@
 
 @section('content')
 <div class="container">
-    <h1 class="mt-3 text-center">News</h1>
-    <p class="text-center">Berita-berita tentang perfilman ada di sini!</p>
+    <h1 class="mt-3 text-center text-light">News</h1>
+    <p class="text-center text-light">Berita-berita tentang perfilman ada di sini!</p>
 </div>
 <div class="container">
     <div class="row">

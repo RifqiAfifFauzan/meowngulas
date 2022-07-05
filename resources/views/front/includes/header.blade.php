@@ -1,5 +1,6 @@
 
-<nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 mb-3 bg-white rounded">
+{{-- <nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 mb-3 bg-white rounded"> --}}
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm p-3 mb-3">
 
     <div class="container">
         <a class="navbar-brand" href="/"><img src="{{ asset('back/img/meowngulas-navbar.png')}}" alt="logo"/></a>

@@ -99,7 +99,6 @@ class NewsController extends Controller
                 'judul' => $request->judul,
                 'body' => $request->body,
                 'slug' => Str::slug($request->judul),
-                'is_active' => $request->is_active,
                 'user_id' => Auth::id(),
         ]);
         Alert::info('Terupdate', 'Data Berhasil Diupdate');
@@ -113,7 +112,6 @@ class NewsController extends Controller
             'body' => $request->body,
             'slug' => Str::slug($request->judul),
             'genre_id' => $request->genre_id,
-            'is_active' => $request->is_active,
             'user_id' => Auth::id(),
             'gambar_news' => $request->file('gambar_news')->store('news'),
     ]);

@@ -1,11 +1,11 @@
 @extends('front.layouts.frontend')
 
 @section('content')
-<div class="container">
+<div class="container text-light">
     <div class="row">
-        <div class="col-lg-8 mt-4">
+        <div class="col-lg-8 mt-4 ml-5">
             <div class="div">
-                <img src="{{ asset('uploads/'.$review->gambar_review) }}" class="img/fluid">
+                <img src="{{ asset('uploads/'.$review->gambar_review) }}" class="img/fluid ">
             </div>
             <div class="detail-content mt-2 p-4">
                 <div class="detail-badge">
