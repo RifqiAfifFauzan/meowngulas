@@ -107,7 +107,6 @@ class reviewController extends Controller
                     'body' => $request->body,
                     'slug' => Str::slug($request->judul),
                     'genre_id' => $request->genre_id,
-                    'is_active' => $request->is_active,
                     'user_id' => Auth::id(),
                     'rating' => $request->rating,
             ]);
@@ -122,7 +121,6 @@ class reviewController extends Controller
                 'body' => $request->body,
                 'slug' => Str::slug($request->judul),
                 'genre_id' => $request->genre_id,
-                'is_active' => $request->is_active,
                 'user_id' => Auth::id(),
                 'gambar_review' => $request->file('gambar_review')->store('review'),
                 'rating' => $request->rating,

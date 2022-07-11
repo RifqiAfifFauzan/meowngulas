@@ -33,7 +33,7 @@
                                 <tr>
                                     <th>ID</th>
                                     <th>Judul Slide</th>
-                                    <th>Link</th>
+                                    {{-- <th>Link</th> --}}
                                     <th>Gambar</th>
                                     <th>Action</th>
                                 </tr>
@@ -43,7 +43,7 @@
                                 <tr>
                                     <td>{{ $row->id }}</td>
                                     <td>{{ $row->judul_slide }}</td>
-                                    <td>{{ $row->link }}</td>
+                                    {{-- <td>{{ $row->link }}</td> --}}
                                     <td>
                                         <img src="{{ asset('uploads/'.$row->gambar_slide)}}" width="100">
                                     </td>

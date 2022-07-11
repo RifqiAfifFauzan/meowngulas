@@ -26,10 +26,10 @@
                             <label for="judul_slide">Judul Slide</label>
                             <input type="text" name="judul_slide" class="form-control" id="text" placeholder="Masukkan Judul">
                         </div>
-                        <div class="form-group">
+                        {{-- <div class="form-group">
                             <label for="link">Link</label>
                             <input type="text" name="link" class="form-control" id="text" placeholder="Masukkan Link">
-                        </div>
+                        </div> --}}
                         <div class="form-group">
                             <label for="gambar_slide">Gambar slide</label>
                             <input type="file" name="gambar_slide" class="form-control">
