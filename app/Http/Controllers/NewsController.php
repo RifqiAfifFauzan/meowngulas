@@ -50,7 +50,6 @@ class NewsController extends Controller
         $data = $request->all();
         $data['slug'] = Str::slug($request->judul);
         $data['user_id'] = Auth::id();
-        $data['views'] = 0;
         $data['gambar_news']=$request->file('gambar_news')->store('news');
 
         News::create($data);

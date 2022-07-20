@@ -49,7 +49,6 @@ class reviewController extends Controller
         $data = $request->all();
         $data['slug'] = Str::slug($request->judul);
         $data['user_id'] = Auth::id();
-        $data['views'] = 0;
         $data['gambar_review']=$request->file('gambar_review')->store('review');
         $data['rating'];
 

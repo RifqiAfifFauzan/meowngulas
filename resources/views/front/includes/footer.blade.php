@@ -63,9 +63,11 @@
           data-mdb-ripple-color="light"
           ><i class="fab fa-github"></i
         ></a>
+        <a class="btn" href="{{ route('login') }}">Login as Admin</a>
         <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
             <i class="fas fa-arrow-up"></i>
         </button>
+
       </section>
       <!-- Section: Social media -->
     </div>
